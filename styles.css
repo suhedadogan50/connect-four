@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#gameBoard {
+    display: flex;
+    justify-content: center;
+    background-color: #004488;
+    transform: rotate(180deg);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.column {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid #ddd;
+}
+
+.player1 { background-color: red; }
+.player2 { background-color: yellow; }
+.highlight { border: 3px solid green; }
+
+#gameInfo {
+    margin-bottom: 20px;
+}
+
+#currentPlayer {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@keyframes fallAnimation {
+    0% {
+      transform: translateY(-700px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
